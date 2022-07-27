@@ -11,7 +11,7 @@
     <header class="page-header">
       <div class="container">
         <nav class="navigation">
-          <a class="navigation-logo" href="#">
+          <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/logo.svg" width="145" height="36" alt="Логотип Device в шапке.">
           </a>
           <div class="navigation-container">
@@ -23,16 +23,36 @@
             </form>
             <ul class="user-list">
               <li class="user-item">
-                <a class="user-link user-link-enter" href="#">Коля Петухов</a>
+                <a class="user-link user-link-name" href="#">
+                  <svg class="enter" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 12.4h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.9 8.4.4 6.5.4A3.5 3.5 0 0 0 3 3.9c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12.4Z" />
+                  </svg>
+                  Коля Петухов
+                </a>
               </li>
               <li class="user-item">
-                <a class="user-link user-link-enter" href="#">Выйти</a>
+                <a class="user-link user-link-out" href="#">Выйти</a>
               </li>
               <li class="user-item">
-                <a class="user-link navigation-link-compare" href="#">Сравнить</a>
+                <a class="user-link" href="#">
+                  <svg class="compare" aria-hidden="true" focusable="false" width="10" height="13" viewBox="0 0 10 13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 .4H4v12h2V.4ZM2 4.4H0v8h2v-8ZM10 3.4H8v9h2v-9Z" />
+                  </svg>
+                  Сравнить
+                </a>
               </li>
               <li class="user-item">
-                <a class="user-link user-link-basket" href="#">Корзина</a>
+                <a class="user-link user-link-basket" href="#">
+                  <svg class="basket" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m15.3 5.4-3.5.2-3.2-5L8 .5c-.2 0-.5 0-.6.3L4.2 5.6H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1 1.4 1h9.4c.7 0 1.2-.3 1.4-1l1.9-7v-.1c0-.4-.3-.8-.7-.8ZM8 2.3l2.2 3.2H5.9L8 2.3Z" />
+                  </svg>
+                  Корзина
+                </a>
               </li>
             </ul>
           </div>
@@ -109,7 +129,7 @@
           <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
             <h2 class="catalog-title">Фильтр:</h2>
             <fieldset class="catalog-filters-group">
-              <legend class="catalog-filters-title">Стоимость</legend>
+              <legend class="catalog-filters-title catalog-filters-title-price">Стоимость</legend>
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left:0; width:119px;">
@@ -122,12 +142,12 @@
                   </div>
                 </div>
                 <div class="range-wrapper-input">
-                  <label class="catalog-filter-label">
-                    от
+                  <label class="catalog-filter-label catalog-filter-label-left">
+                    <span class="catalog-filter-text catalog-filter-text-left">от</span>
                     <input class="range-input range-input-left" type="number" value="0" name="min-price">
                   </label>
                   <label class="catalog-filter-label">
-                    до
+                    <span class="catalog-filter-text">до</span>
                     <input class="range-input range-input-left" type="number" value="5000" name="min-price">
                   </label>
                 </div>
@@ -138,35 +158,35 @@
               <ul class="catalog-filters-list">
                 <li class="catalog-filters-item">
                   <label class="control-checkbox">
-                    <input class="visually-hidden" type="checkbox" name="black" checked>
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="black" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Черный</span>
                   </label>
                 </li>
                 <li class="catalog-filters-item">
                   <label class="control-checkbox">
-                    <input class="visually-hidden" type="checkbox" name="white" checked>
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="white" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Белый</span>
                   </label>
                 </li>
                 <li class="catalog-filters-item">
                   <label class="control-checkbox">
-                    <input class="visually-hidden" type="checkbox" name="blue">
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="blue">
                     <span class="control-mark"></span>
                     <span class="control-label">Синий</span>
                   </label>
                 </li>
                 <li class="catalog-filters-item">
                   <label class="control-checkbox">
-                    <input class="visually-hidden" type="checkbox" name="red">
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="red">
                     <span class="control-mark"></span>
                     <span class="control-label">Красный</span>
                   </label>
                 </li>
                 <li class="catalog-filters-item">
                   <label class="control-checkbox">
-                    <input class="visually-hidden" type="checkbox" name="pink">
+                    <input class="visually-hidden control-input-checkbox" type="checkbox" name="pink">
                     <span class="control-mark"></span>
                     <span class="control-label">Розовый</span>
                   </label>
@@ -178,20 +198,21 @@
               <ul class="catalog-filters-list">
                 <li class="catalog-filters-item">
                   <label class="control-radio">
-                    <input class="visually-hidden" type="radio" name="question" value="Есть" checked>
+                    <input class="visually-hidden control-input-radio" type="radio" name="question" value="Есть" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
                 <li class="catalog-filters-item">
                   <label class="control-radio">
-                    <input class="visually-hidden" type="radio" name="question" value="Нет">
+                    <input class="visually-hidden control-input-radio" type="radio" name="question" value="Нет">
                     <span class="control-mark"></span>
                     <span class="control-label">Нет</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
+            <a class="button" href="#">Показать</a>
           </form>
           <div class="catalog-right-column">
             <section class="sorting-container">

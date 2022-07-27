@@ -22,38 +22,60 @@
               <button class="page-header-button" type="submit">Найти</button>
             </form>
             <ul class="user-list">
-              <li class="user-item user-link-enter">
-                <a class="user-link" href="#">Войти</a>
+              <li class="user-item ">
+                <a class="user-link" href="#">
+                  <svg class="enter" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 12.4h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.9 8.4.4 6.5.4A3.5 3.5 0 0 0 3 3.9c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12.4Z" />
+                  </svg>
+                  Войти
+                </a>
               </li>
-              <li class="user-item user-link-compare">
-                <a class="user-link" href="#">Сравнить</a>
+              <li class="user-item ">
+                <a class="user-link" href="#">
+                  <svg class="compare" aria-hidden="true" focusable="false" width="10" height="13" viewBox="0 0 10 13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 .4H4v12h2V.4ZM2 4.4H0v8h2v-8ZM10 3.4H8v9h2v-9Z" />
+                  </svg>
+                  Сравнить
+                </a>
               </li>
-              <li class="user-item user-link-basket">
-                <a class="user-link" href="#">Корзина</a>
+              <li class="user-item ">
+                <a class="user-link user-link-basket" href="#">
+                  <svg class="basket" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m15.3 5.4-3.5.2-3.2-5L8 .5c-.2 0-.5 0-.6.3L4.2 5.6H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1 1.4 1h9.4c.7 0 1.2-.3 1.4-1l1.9-7v-.1c0-.4-.3-.8-.7-.8ZM8 2.3l2.2 3.2H5.9L8 2.3Z" />
+                  </svg>
+                  Корзина
+                </a>
               </li>
             </ul>
           </div>
 
           <ul class="catalog-list">
             <li class="catalog-item">
-              <a class="catalog-link" href="#">Каталог товаров</a>
+              <a class="catalog-link catalog-link-t" href="#">Каталог товаров
+                <span class="cross"></span>
+              </a>
               <div class="container-sublist">
                 <ul class="catalog-sublist">
-                  <li class="catalog-item">
+                  <li class="catalog-subitem">
                     <a class="catalog-sublist-link" href="#">Виртуальная реальность</a>
                   </li>
-                  <li class="catalog-item">
+                  <li class="catalog-subitem">
                     <a class="catalog-sublist-link" href="#">Моноподы для cелфи</a>
                   </li>
-                  <li class="catalog-item">
+                  <li class="catalog-subitem">
                     <a class="catalog-sublist-link" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
                 <ul class="catalog-sublist">
-                  <li class="catalog-item">
+                  <li class="catalog-subitem">
                     <a class="catalog-sublist-link" href="#">Фитнес-браслеты</a>
                   </li>
-                  <li class="catalog-item">
+                  <li class="catalog-subitem">
                     <a class="catalog-sublist-link" href="#"> Умные часы</a>
                   </li>
 
@@ -98,10 +120,15 @@
                     замаскированным под стандартную камеру.</p>
                   <a class="slider-link button" href="#">Подробнее</a>
                   <dl class="slider-specification">
-                    <dt class="specification-name">Дальность полета</dt>
-                    <dd class="specification-value">800 м</dd>
-                    <dt class="specification-name">Радиус поражения</dt>
-                    <dd class="specification-value">50м</dd>
+                    <div class="slider-specification-container">
+                      <dt class="specification-name">Дальность полета</dt>
+                      <dd class="specification-value">800 м</dd>
+                    </div>
+                    <div class="slider-specification-container">
+                      <dt class="specification-name">Радиус поражения</dt>
+                      <dd class="specification-value">50м</dd>
+                    </div>
+
                   </dl>
                 </div>
               </div>
@@ -118,8 +145,10 @@
                     соблюдать диету.</p>
                   <a class="slider-link button" href="#">Подробнее</a>
                   <dl class="slider-specification">
-                    <dt class="specification-name">Без подзарядки</dt>
-                    <dd class="specification-value">48 часов</dd>
+                    <div class="slider-specification-container">
+                      <dt class="specification-name">Без подзарядки</dt>
+                      <dd class="specification-value">48 часов</dd>
+                    </div>
                   </dl>
                 </div>
               </div>
@@ -137,12 +166,19 @@
                   </p>
                   <a class="slider-link button" href="#">Подробнее</a>
                   <dl class="slider-specification">
-                    <dt class="specification-name">Длина палки</dt>
-                    <dd class="specification-value">8,5 м</dd>
-                    <dt class="specification-name">Вес палки</dt>
-                    <dd class="specification-value">5 кг</dd>
-                    <dt class="specification-name">Материал</dt>
-                    <dd class="specification-value">Карбон</dd>
+                    <div class="slider-specification-container slider-specification-container-mono">
+                      <dt class="specification-name">Длина палки</dt>
+                      <dd class="specification-value">8,5 м</dd>
+                    </div>
+                    <div class="slider-specification-container slider-specification-container-mono">
+                      <dt class="specification-name">Вес палки</dt>
+                      <dd class="specification-value">5 кг</dd>
+                    </div>
+                    <div class="slider-specification-container slider-specification-container-mono">
+                      <dt class="specification-name">Материал</dt>
+                      <dd class="specification-value">Карбон</dd>
+                    </div>
+
                   </dl>
                 </div>
               </div>
@@ -289,33 +325,86 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="container services-main-container">
-          <div class="services-container">
-            <ul class="services-list">
-              <li class="services-item">
-                <button class="button services-button services-button-current" type="button">Доставка
-                </button>
-              </li>
-              <li class="services-item">
-                <button class="button services-button" type="button">Гарантия
-                </button>
-              </li>
-              <li class="services-item">
-                <button class="button services-button" type="button">Кредит
-                </button>
-              </li>
-            </ul>
+          <ul class="services-main-list">
+            <li class="services-main-item">
+              <div class="services-container">
+                <ul class="services-list">
+                  <li class="services-item">
+                    <button class="button services-button services-button-current" type="button">Доставка
+                    </button>
+                  </li>
+                  <li class="services-item">
+                    <button class="button services-button" type="button">Гарантия
+                    </button>
+                  </li>
+                  <li class="services-item">
+                    <button class="button services-button" type="button">Кредит
+                    </button>
+                  </li>
+                </ul>
+                <div class="services-delivery-one">
+                  <h3 class="services-delivery-title title">Доставка</h3>
+                  <p class="services-delivery-text">
+                    Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно! Ведь
+                    мы неплохо заработаем, поднимая его на ваш этаж.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="services-container">
+                <ul class="services-list">
+                  <li class="services-item">
+                    <button class="button services-button services-button" type="button">Доставка
+                    </button>
+                  </li>
+                  <li class="services-item">
+                    <button class="button services-button-current" type="button">Гарантия
+                    </button>
+                  </li>
+                  <li class="services-item">
+                    <button class="button services-button" type="button">Кредит
+                    </button>
+                  </li>
+                </ul>
+                <div class="services-delivery-two">
+                  <h3 class="services-delivery-title title">Гарантия</h3>
+                  <p class="services-delivery-text">
+                    Если из-за возгорания купленного у нас товара у вас
+                    сгорит дом — не переживайте, мы выдадим вам новый.
+                    Товар, не дом, конечно же.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="services-container">
+                <ul class="services-list">
+                  <li class="services-item">
+                    <button class="button services-button services-button" type="button">Доставка
+                    </button>
+                  </li>
+                  <li class="services-item">
+                    <button class="button services-button" type="button">Гарантия
+                    </button>
+                  </li>
+                  <li class="services-item">
+                    <button class="button services-button-current" type="button">Кредит
+                    </button>
+                  </li>
+                </ul>
+                <div class="services-delivery-three">
+                  <h3 class="services-delivery-title title">Кредит</h3>
+                  <p class="services-delivery-text">
+                    Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                    условия кредита. Выгодные для банка, разумеется.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
 
-
-            <div class="services-delivery">
-              <h3 class="services-delivery-title title">Доставка</h3>
-              <p class="services-delivery-text">
-                Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-
-            </div>
-          </div>
         </div>
       </section>
       <section class="delivery">
@@ -416,11 +505,11 @@
         <a class="footer-logo" href="#">
           <img class="page-footer-logo" src="images/footer/device-footer.svg" width="145" height="36"
             alt="Логотип Device в подвале.">
-          </img>
+
         </a>
         <div class="footer-container">
           <section class="address">
-            <span class="visually-hidden">Адрес</span>
+            <h2 class="visually-hidden">Адрес</h2>
             <address class="footer-address">
               <p class="footer-address-text">Санкт-Петербург, набережная
                 реки Карповки, 5, литера П.
@@ -467,8 +556,7 @@
                   <svg class="social-icon" aria-hidden="true" focusable="false" width="16" height="11"
                     viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="m15.7 1.7-.5-.9a2 2 0 0 0-1-.5C13 0 8 0 8 0 6 0 3.8 0 1.7.3L.8.8a2 2 0 0 0-.5.9A19.4 19.4 0 0 0 .3 9l.5.8c.3.3.6.5 1 .5 1.2.4 6.2.4 6.2.4l6.3-.3.9-.5.5-.9a19 19 0 0 0 0-7.3Zm-9.3 6V3l4.2 2.2-4.2 2.3Z"
-                      />
+                      d="m15.7 1.7-.5-.9a2 2 0 0 0-1-.5C13 0 8 0 8 0 6 0 3.8 0 1.7.3L.8.8a2 2 0 0 0-.5.9A19.4 19.4 0 0 0 .3 9l.5.8c.3.3.6.5 1 .5 1.2.4 6.2.4 6.2.4l6.3-.3.9-.5.5-.9a19 19 0 0 0 0-7.3Zm-9.3 6V3l4.2 2.2-4.2 2.3Z" />
                   </svg>
                   <span class="visually-hidden">youtube</span>
                 </a>
@@ -478,8 +566,7 @@
                   <svg class="social-icon" aria-hidden="true" focusable="false" width="15" height="15"
                     viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M9.7.2c1.5-.5 2.6.3 3.2 1l1.7-.5a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.7 0 12.3c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.8.3 7 .4 5c.3.3.9.5 1.2.4C1 5.3-.2 2.4.8.9c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
-                       />
+                      d="M9.7.2c1.5-.5 2.6.3 3.2 1l1.7-.5a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.7 0 12.3c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.8.3 7 .4 5c.3.3.9.5 1.2.4C1 5.3-.2 2.4.8.9c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" />
                   </svg>
                   <span class="visually-hidden">twitter</span>
                 </a>
