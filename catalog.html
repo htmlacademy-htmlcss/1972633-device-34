@@ -29,7 +29,7 @@
                     <path
                       d="M0 12.4h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C10 1.9 8.4.4 6.5.4A3.5 3.5 0 0 0 3 3.9c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 0 12.4Z" />
                   </svg>
-                  Коля Петухов
+                  <span class="user-link-text">Коля Петухов</span>
                 </a>
               </li>
               <li class="user-item">
@@ -41,7 +41,7 @@
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 .4H4v12h2V.4ZM2 4.4H0v8h2v-8ZM10 3.4H8v9h2v-9Z" />
                   </svg>
-                  Сравнить
+                  <span class="user-link-text">Сравнить</span>
                 </a>
               </li>
               <li class="user-item">
@@ -51,7 +51,7 @@
                     <path
                       d="m15.3 5.4-3.5.2-3.2-5L8 .5c-.2 0-.5 0-.6.3L4.2 5.6H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1 1.4 1h9.4c.7 0 1.2-.3 1.4-1l1.9-7v-.1c0-.4-.3-.8-.7-.8ZM8 2.3l2.2 3.2H5.9L8 2.3Z" />
                   </svg>
-                  Корзина
+                  <span class="user-link-text">Корзина</span>
                 </a>
               </li>
             </ul>
@@ -142,13 +142,13 @@
                   </div>
                 </div>
                 <div class="range-wrapper-input">
-                  <label class="catalog-filter-label catalog-filter-label-left">
-                    <span class="catalog-filter-text catalog-filter-text-left">от</span>
-                    <input class="range-input range-input-left" type="number" value="0" name="min-price">
+                  <label class="catalog-filter-label">
+                    <span class="catalog-filter-text">от</span>
+                    <input class="range-input" type="number" value="0" name="min-price">
                   </label>
                   <label class="catalog-filter-label">
                     <span class="catalog-filter-text">до</span>
-                    <input class="range-input range-input-left" type="number" value="5000" name="min-price">
+                    <input class="range-input" type="number" value="5000" name="min-price">
                   </label>
                 </div>
               </div>
@@ -212,7 +212,7 @@
                 </li>
               </ul>
             </fieldset>
-            <a class="button" href="#">Показать</a>
+            <a class="button button-filter" href="#">Показать</a>
           </form>
           <div class="catalog-right-column">
             <section class="sorting-container">
@@ -310,6 +310,7 @@
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">2</a>
                   </li>
+
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">3</a>
                   </li>
@@ -339,16 +340,12 @@
             alt="Логотип Device в подвале.">
         </a>
         <div class="footer-container">
-          <section class="address">
-            <h2 class="visually-hidden">Адрес</h2>
-            <address class="footer-address">
-              <p class="footer-address-text">Санкт-Петербург, набережная
-                реки Карповки, 5, литера П.
-              </p>
-            </address>
-          </section>
-          <section class="footer-contacts">
-            <h2 class="visually-hidden">Контакты</h2>
+          <address class="footer-address">
+            <p class="footer-address-text">Санкт-Петербург, набережная
+              реки Карповки, 5, литера П.
+            </p>
+          </address>
+          <div class="footer-column">
             <ul class="footer-list">
               <li class="footer-item">
                 <a class="footer-link" href="#">Доставка</a>
@@ -356,59 +353,57 @@
               <li class="footer-item">
                 <a class="footer-link" href="#">Гарантия</a>
               </li>
+
               <li class="footer-item">
                 <a class="footer-link" href="#">Контакты</a>
               </li>
             </ul>
-          </section>
-          <section class="number">
-            <h2 class="visually-hidden">Телефон</h2>
-            <address class="footer-address-number">
-              <a class="number-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-            </address>
-          </section>
+          </div>
+
+          <address class="footer-address-number">
+            <a class="number-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+          </address>
         </div>
+
         <div class="footer-wrapper">
-          <section class="footer-social">
-            <h2 class="visually-hidden">Социальные сети</h2>
+          <div class="container-social-list">
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="footer-social-link" href="https://t.me/htmlacademy">
-                  <svg class="social-icon" aria-hidden="true" focusable="false" width="14" height="12"
-                    viewBox="0 0 14 12" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="social-icon" aria-hidden="true" focusable="false" width="14" height="12" viewBox="0 0 14 12"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M12.4 0 .6 4.7c-.8.4-.8.8-.1 1l3 1 7-4.5c.4-.2.7 0 .4.2l-5.7 5-.2 3.2c.3 0 .5-.1.6-.3l1.5-1.4 3 2.2c.6.3 1 .2 1.2-.5l2-9.5c.2-.8-.3-1.2-.9-1Z" />
                   </svg>
                   <span class="visually-hidden">telegram</span>
                 </a>
               </li>
+
               <li class="footer-social-item">
                 <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                  <svg class="social-icon" aria-hidden="true" focusable="false" width="16" height="11"
-                    viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="social-icon" aria-hidden="true" focusable="false" width="16" height="11" viewBox="0 0 16 11"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="m15.7 1.7-.5-.9a2 2 0 0 0-1-.5C13 0 8 0 8 0 6 0 3.8 0 1.7.3L.8.8a2 2 0 0 0-.5.9A19.4 19.4 0 0 0 .3 9l.5.8c.3.3.6.5 1 .5 1.2.4 6.2.4 6.2.4l6.3-.3.9-.5.5-.9a19 19 0 0 0 0-7.3Zm-9.3 6V3l4.2 2.2-4.2 2.3Z"
-                      fill="#444" />
+                      d="m15.7 1.7-.5-.9a2 2 0 0 0-1-.5C13 0 8 0 8 0 6 0 3.8 0 1.7.3L.8.8a2 2 0 0 0-.5.9A19.4 19.4 0 0 0 .3 9l.5.8c.3.3.6.5 1 .5 1.2.4 6.2.4 6.2.4l6.3-.3.9-.5.5-.9a19 19 0 0 0 0-7.3Zm-9.3 6V3l4.2 2.2-4.2 2.3Z" />
                   </svg>
                   <span class="visually-hidden">youtube</span>
                 </a>
               </li>
+
               <li class="footer-social-item">
                 <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
-                  <svg class="social-icon" aria-hidden="true" focusable="false" width="15" height="15"
-                    viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="social-icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M9.7.2c1.5-.5 2.6.3 3.2 1l1.7-.5a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.7 0 12.3c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.8.3 7 .4 5c.3.3.9.5 1.2.4C1 5.3-.2 2.4.8.9c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
-                      fill="#444" />
+                      d="M9.7.2c1.5-.5 2.6.3 3.2 1l1.7-.5a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.7 0 12.3c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.8.3 7 .4 5c.3.3.9.5 1.2.4C1 5.3-.2 2.4.8.9c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" />
                   </svg>
                   <span class="visually-hidden">twitter</span>
                 </a>
               </li>
 
             </ul>
-          </section>
-          <section class="logo-academy">
-            <h2 class="visually-hidden">Логотип html academy</h2>
+          </div>
+          <div class="logo-academy">
             <a class="logo-academy-link" href="https://htmlacademy.ru/">
               <svg class="logo-academy-icon" aria-hidden="true" focusable="false" width="115" height="33"
                 viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -418,12 +413,9 @@
               </svg>
               <span class="visually-hidden">Логотип html academy</span>
             </a>
-          </section>
-
+          </div>
         </div>
-
       </div>
-
     </footer>
 
   </body>
