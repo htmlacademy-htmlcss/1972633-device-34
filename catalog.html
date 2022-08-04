@@ -10,16 +10,38 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="navigation">
+        <nav class="navigation navigation-catalog">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/logo.svg" width="145" height="36" alt="Логотип Device в шапке.">
           </a>
           <div class="navigation-container">
-            <form class="page-header-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="page-header-text" class="visually-hidden">Поиск</label>
-              <input class="page-header-input" type="text" name="page-header-text" id="page-header-text"
-                placeholder="Текст поиска" required>
-              <button class="page-header-button" type="submit">Найти</button>
+            <form class="page-header-form"  action="https://echo.htmlacademy.ru/" method="post">
+              <div class="page-header-text-wrapper" >
+                <label for="page-header-text"  class="visually-hidden">Поиск</label>
+                <div class="input-wripper" >
+                  <svg class="input-icon" aria-hidden="true" focusable="false" width="16" height="17"
+                    viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)">
+                      <path
+                        d="m15.7 14.7-3.1-3.1A7 7 0 0 0 7 .4a7 7 0 0 0-7 7A7 7 0 0 0 11.2 13l3.1 3c.2.3.4.4.7.4.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7.4a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z"
+                        fill="#000" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" transform="translate(0 .4)" d="M0 0h16v16H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <input class="page-header-input"  type="text" name="page-header-text" id="page-header-text"
+                    placeholder="Текст поиска" required>
+                </div>
+              </div>
+              <div class="page-header-button-wripper">
+                <button class="page-header-button" type="submit">Найти</button>
+              </div>
+
+
+
             </form>
             <ul class="user-list">
               <li class="user-item">
@@ -59,7 +81,9 @@
 
           <ul class="catalog-list">
             <li class="catalog-item">
-              <a class="catalog-link" href="#">Каталог товаров</a>
+              <a class="catalog-link catalog-link-cross" href="#">Каталог товаров
+                <span class="cross"></span>
+              </a>
               <div class="container-sublist">
                 <ul class="catalog-sublist">
                   <li class="catalog-item">
@@ -249,8 +273,12 @@
               <ul class="cards-list">
                 <li class="cards-item">
                   <a class="cards-link" href="#">
-                    <img class="cards-images" src="images/cards/product-1.jpg" alt="Любительская
-                    селфи-палка.">
+                    <div class="cards-link-container" >
+                      <img class="cards-images" src="images/cards/product-1.jpg" alt="Любительская
+                      селфи-палка.">
+                      <a class="button-image" href="#">Показать</a>
+                    </div>
+
                     <div class="container-cards">
                       <h3 class="cards-title">
                         Любительская<br>
@@ -305,7 +333,7 @@
                 </a>
                 <ul class="pagination-list">
                   <li class="pagination-item">
-                    <a class="pagination-link">1</a>
+                    <a class="pagination-link" href="#">1</a>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">2</a>
@@ -315,7 +343,7 @@
                     <a class="pagination-link" href="#">3</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">...</a>
+                    <span class="pagination-link" href="#">...</span>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#">5</a>
