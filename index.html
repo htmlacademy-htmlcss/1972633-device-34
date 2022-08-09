@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -15,33 +16,13 @@
             <img class="page-header-logo" src="images/logo.svg" width="145" height="36" alt="Логотип Device в шапке.">
           </a>
           <div class="navigation-container">
-            <form class="page-header-form"  action="https://echo.htmlacademy.ru/" method="post">
-              <div class="page-header-text-wrapper" >
-                <label for="page-header-text"  class="visually-hidden">Поиск</label>
-                <div class="input-wripper" >
-                  <svg class="input-icon" aria-hidden="true" focusable="false" width="16" height="17"
-                    viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#a)">
-                      <path
-                        d="m15.7 14.7-3.1-3.1A7 7 0 0 0 7 .4a7 7 0 0 0-7 7A7 7 0 0 0 11.2 13l3.1 3c.2.3.4.4.7.4.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7.4a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z"
-                        fill="#000" />
-                    </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" transform="translate(0 .4)" d="M0 0h16v16H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <input class="page-header-input"  type="text" name="page-header-text" id="page-header-text"
-                    placeholder="Текст поиска" required>
-                </div>
+            <form class="page-header-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="page-header-text-wrapper">
+                <label for="page-header-text" class="visually-hidden">Поиск</label>
+                <input class="page-header-input" type="text" name="page-header-text" id="page-header-text"
+                  placeholder="Текст поиска" required>
               </div>
-              <div class="page-header-button-wripper">
-                <button class="page-header-button" type="submit">Найти</button>
-              </div>
-
-
-
+              <button class="page-header-button" type="submit">Найти</button>
             </form>
             <ul class="user-list">
               <li class="user-item ">
@@ -64,7 +45,7 @@
                 </a>
               </li>
 
-              <li class="user-item user-item-basket ">
+              <li class="user-item user-item-basket">
                 <a class="user-link user-link-basket" href="#">
                   <svg class="basket" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15"
                     xmlns="http://www.w3.org/2000/svg">
@@ -73,11 +54,13 @@
                   </svg>
                   <span class="user-link-text">Корзина</span>
                 </a>
+                <!-- К div popovert добавить класс active для появления поповера -->
                 <div class="popover">
                   <ul class="popover-list">
                     <li class="popover-item">
                       <a class="popover-link" href="">
-                        <img class="popover-img" src="/images/popover/mono-pop.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+                        <img class="popover-img" src="/images/popover/mono-pop.jpg" width="39" height="43"
+                          alt="Любительская селфи-палка.">
                         <p class="popover-text">
                           Любительская <br> селфи-палка
                         </p>
@@ -122,7 +105,7 @@
 
                   </ul>
                   <div class="popover-link-button-container">
-                    <a class="popover-link-button"  href="#">
+                    <a class="popover-link-button" href="#">
                       Открыть корзину
                     </a>
                   </div>
@@ -133,9 +116,11 @@
 
           <ul class="catalog-list">
             <li class="catalog-item catalog-item-cross">
+              <!-- К а catalog-link-cross добавить ссылке класс active для изменения + на - -->
               <a class="catalog-link catalog-link-cross" href="#">Каталог товаров
                 <span class="cross"></span>
               </a>
+              <!-- К div container-sublist добавить класс active для появления подсписка -->
               <div class="container-sublist">
                 <ul class="catalog-sublist">
                   <li class="catalog-subitem">
@@ -188,23 +173,22 @@
                 <img class="slider-img" src="images/slider/slider-one.png" alt="Квадрокоптер." width="560" height="560">
                 <div class="slider-container">
                   <span class="slider-number">01</span>
-                  <div class="slider-div">
-                    <h3 class="slider-title title">Порхает как бабочка,
-                      жалит как пчела!</h3>
-                    <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                      замаскированным под стандартную камеру.</p>
-                    <a class="slider-link button" href="#">Подробнее</a>
-                    <dl class="slider-specification">
-                      <div class="slider-specification-container">
-                        <dt class="specification-name">Дальность полета</dt>
-                        <dd class="specification-value">800 м</dd>
-                      </div>
-                      <div class="slider-specification-container">
-                        <dt class="specification-name">Радиус поражения</dt>
-                        <dd class="specification-value">50м</dd>
-                      </div>
-                    </dl>
-                  </div>
+                  <h3 class="slider-title title">Порхает как бабочка,
+                    жалит как пчела!</h3>
+                  <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                    замаскированным под стандартную камеру.</p>
+                  <a class="slider-link button" href="#">Подробнее</a>
+                  <dl class="slider-specification">
+                    <div class="slider-specification-container">
+                      <dt class="specification-name">Дальность полета</dt>
+                      <dd class="specification-value">800 м</dd>
+                    </div>
+                    <div class="slider-specification-container">
+                      <dt class="specification-name">Радиус поражения</dt>
+                      <dd class="specification-value">50 м</dd>
+                    </div>
+                  </dl>
+
                 </div>
               </div>
             </li>
@@ -265,17 +249,17 @@
             </li>
           </ul>
 
-          <div class="slider-controls" >
-            <button class="slider-button slider-next"  type="button">
-              <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60"
-                xmlns="http://www.w3.org/2000/svg">
+          <div class="slider-controls">
+            <button class="slider-button slider-next" type="button">
+              <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="20" height="60"
+                viewBox="0 0 20 60" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
               </svg>
               <span class="visually-hidden">Предыдущее фото</span>
             </button>
             <button class="slider-button slider-prev" type="button">
-              <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="20" height="60"
+                viewBox="0 0 20 60" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
               </svg>
               <span class="visually-hidden">Следующее фото</span>
@@ -285,7 +269,7 @@
 
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
                 <span class="visually-hidden">1 слайдер</span>
               </button>
             </li>
@@ -310,10 +294,13 @@
             <li class="products-item">
               <a class="products-link" href="#">
                 <span class="products-background">
-                  <svg class="products-icon" aria-hidden="true" focusable="false" width="57" height="98"
-                    viewBox="0 0 57 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="products-icon" width="97" height="55" viewBox="0 0 97 55" aria-hidden="true"
+                    focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M54.5 32.2H53v-4.6c0-5.1-4.1-9.2-9.1-9.2H9.1c-5 0-9.1 4.1-9.1 9.2v42.8c0 5 4 9.2 9 9.2H44c5 0 9-4.1 9-9.2V67h1.6c.4 0 .8-.3.8-.8V52.5c0-.5-.4-.8-.8-.8H53v-8.8h1.5c.8 0 1.5-.7 1.5-1.5v-7.7c0-.8-.7-1.5-1.5-1.5ZM34 29.1a5.3 5.3 0 0 1 0 10.7c-3 0-5.3-2.4-5.3-5.4 0-3 2.4-5.3 5.3-5.3Zm-15.2 0a5.3 5.3 0 0 1 0 10.7c-2.9 0-5.3-2.4-5.3-5.4 0-3 2.4-5.3 5.3-5.3ZM5.3 49.4c0-3 2.4-5.4 5.3-5.4 3 0 5.3 2.4 5.3 5.4 0 3-2.4 5.4-5.3 5.4-3 0-5.3-2.4-5.3-5.4Zm13.6 19.5c-2.9 0-5.3-2.4-5.3-5.4 0-3 2.4-5.3 5.3-5.3a5.3 5.3 0 0 1 0 10.7Zm1.5-20a6 6 0 0 1 6-6 6 6 0 0 1 6.1 6 6 6 0 0 1-6 6.2 6 6 0 0 1-6-6.1Zm13.7 20c-3 0-5.3-2.4-5.3-5.4 0-3 2.4-5.3 5.3-5.3a5.3 5.3 0 0 1 0 10.7Zm8.3-14.1c-3 0-5.3-2.4-5.3-5.4 0-3 2.4-5.4 5.3-5.4 3 0 5.3 2.4 5.3 5.4 0 3-2.4 5.4-5.3 5.4ZM9.6 15.3h33.7c.9 0 1.5-.7 1.3-1.5L43 3c-.2-1.6-1.8-3-3.5-3h-26A3.7 3.7 0 0 0 10 3L8.3 13.8c0 .8.5 1.5 1.3 1.5ZM43.3 82.7H9.6c-.8 0-1.4.7-1.3 1.5L10 95c.2 1.6 1.8 3 3.5 3h26c1.7 0 3.3-1.4 3.5-3l1.6-10.8c.2-.8-.4-1.5-1.3-1.5Z"
+                      d="M84.1 32.6V20c0-1.3 1-2.4 2.4-2.4l8.3 1.6V11c0-2.3-1.7-3.4-4.2-4.2L67.4.2c1.6 1.4 1.9 2 1.9 4.4v45.2c0 2.3-.5 4-2 5.2l23.3-7c2.4-1 4.2-4.3 4.2-6.6v-8L86.5 35c-1.3 0-2.4-1-2.4-2.4Z"
+                      fill="#363636" />
+                    <path
+                      d="m95.1 21-7.6-1.5c-1 0-1.8.9-1.8 1.9v9.9c0 1 .8 1.8 1.8 1.8l7.6-1.4c1.2-.4 1.9-.9 1.9-1.9v-7c0-1-.8-1.5-1.9-1.8ZM67.2 4.5c0-5.1-4.3-4.5-4.3-4.5S6 4.7 3 5.1C-.2 5.6 0 9.5 0 9.5v36.3c0 3.8 2.6 3.8 2.6 3.8L19.1 51l8.1-11.7s1.1-1.8 2.5-1.8 2.4 1.8 2.4 1.8L41.2 53s19 1.9 22.5 1.9c3.7 0 3.5-5 3.5-5V4.4ZM13 37.2c-3.7 0-6.7-4.6-6.7-10.3 0-5.7 3-10.3 6.7-10.3s6.7 4.6 6.7 10.3c0 5.7-3 10.3-6.7 10.3ZM49 38.6c-4.6 0-8.4-5.2-8.4-11.7 0-6.4 3.8-11.7 8.4-11.7 4.7 0 8.5 5.3 8.5 11.7 0 6.5-3.8 11.7-8.5 11.7Z"
                       fill="currentcolor" />
                   </svg>
                 </span>
@@ -423,7 +410,7 @@
             </li>
           </ul>
           <ul class="services-details">
-            <li class="services-details-item services-details-item-delivery activ">
+            <li class="services-details-item services-details-item-delivery services-details-item-activ">
               <h3 class="services-delivery-title title">Доставка</h3>
               <p class="services-delivery-text">
                 Мы с удовольствием доставим ваш товар прямо
@@ -471,11 +458,9 @@
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" fill="#000" />
               </svg>
-
             </span>
           </a>
         </div>
-
       </section>
       <div class="container">
         <div class="index-column">
@@ -490,14 +475,14 @@
               <li class="about-item">СДИК</li>
               <li class="about-item">ТоксБерри</li>
             </ul>
-            <a class="button about-button">Подробнее о нас</a>
+            <a class="button about-button" href="#">Подробнее о нас</a>
 
 
           </section>
           <section class="contacts">
 
             <h2 class="contacts-title title">Контакты</h2>
-            <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
+            <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. <br> Заодно сможете проверить
               работоспособность покупки.</p>
             <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
             <address class="contacts-address">
@@ -509,7 +494,7 @@
               <li class="contacts-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="button contacts-button">Напишите нам</a>
+            <a class="button contacts-button" href="#">Напишите нам</a>
 
 
 
@@ -522,14 +507,14 @@
             <h2 class="subscription-title title">Подпишитесь
               на рассылку</h2>
             <p class="subscription-text">
-              Еженедельный дайджест с обзорами новинок,
+              Еженедельный дайджест с обзорами новинок,<br>
               длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
             </p>
           </div>
           <div class="subscription-wrapper">
-            <form class="subscription-form"  action="https://echo.htmlacademy.ru/" method="post">
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="subscription-form-text" class="visually-hidden">Email</label>
-              <input class="subscription-form-input"  type="text" name="subscription-form-text"
+              <input class="subscription-form-input" type="text" name="subscription-form-text"
                 id="subscription-form-text" placeholder="Ваш e-mail" required>
               <button class="subscription-form-button" type="submit">Подписаться</button>
             </form>
@@ -627,6 +612,75 @@
         </div>
       </div>
     </footer>
+    <!-- К div modal-container добавить класс modal-open для появления модального окна -->
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <svg class="modal-close-button-icon" width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"
+            focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26 2.4 23.6 0 13 10.6 2.4 0 0 2.4 10.6 13 0 23.6 2.4 26 13 15.4 23.6 26l2.4-2.4L15.4 13 26 2.4Z" />
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-group-data">
+              <p class="modal-name">
+                <label class="field-label" for="name">Ваше имя:</label>
+                <input class="modal-input modal-name-input" type="text" id="name" name="name" placeholder="Введите имя"
+                  required>
+              </p>
+              <!-- К p modal-email добавить класс error для появления красной рамки и красного текста "Забавный у вас адрес"-->
+              <p class="modal-email">
+                <label class="field-label" for="name">Ваш e-mail:</label>
+                <input class="modal-input modal-email-input" type="text" id="e-mail" name="e-mail" placeholder="почта"
+                  required>
+                <span class="modal-email-text">Забавный у вас адрес</span>
+              </p>
+            </div>
+            <div class="modal-group-info">
+              <p class="modal-delivery">
+                <label class="field-label" for="delivery">Что нужно привезти:</label>
+                <input class="modal-input modal-delivery-input" type="text" id="delivery" name="delivery"
+                  placeholder="В свободной форме" required>
+              </p>
+              <p class="modal-quantity">
+                <span class="field-label-container">
+                  <label class="field-label-quantity" for="quantity">Количество:</label>
+                  <button class="tooltip" type="button" aria-labelledby="tooltip-label">
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                    </span>
+                  </button>
+                </span>
+
+                <span class="modal-input-container">
+                  <button class="modal-button-minus">
+                    <svg class="minus-icon" width="16" height="2" viewBox="0 0 16 2" aria-hidden="true"
+                      focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 0H0v2h16V0Z" fill="currentcolor" />
+                    </svg>
+                  </button>
+                  <!-- К input modal-input-quantity добавить класс error для появления красной рамки -->
+                  <input class="modal-input modal-input-quantity" type="number" id="quantity" name="quantity" value="1">
+                  <button class="modal-button-plus">
+                    <svg class="plus-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"
+                      focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="currentcolor" />
+                    </svg>
+                  </button>
+                </span>
+              </p>
+            </div>
+            <button class="button modal-button" type="submit">
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 
