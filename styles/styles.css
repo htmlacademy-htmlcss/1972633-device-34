@@ -1593,7 +1593,7 @@ body {
   opacity: 50%;
 }
 
-.subscription-form-input:not(::placeholder-show) {
+.subscription-form-input:not(:placeholder-shown) {
   color: rgba(68, 68, 68, 1);
 }
 
@@ -2018,7 +2018,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   color: #000000;
   margin-bottom: 14px;
 }
@@ -2071,7 +2071,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2100,7 +2100,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2122,7 +2122,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -2148,7 +2148,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   color: #000000;
 }
 
