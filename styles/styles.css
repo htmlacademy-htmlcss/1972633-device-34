@@ -166,6 +166,7 @@ body {
   background-color: transparent;
   border-left: none;
   cursor: pointer;
+  transition:  0.3s;
 }
 
 .page-header-button:focus::before {
@@ -537,6 +538,7 @@ body {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  transition: 0.3s;
 }
 
 
@@ -551,6 +553,7 @@ body {
   width: 16px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 
 .cross::after {
@@ -565,6 +568,7 @@ body {
   height: 2px;
   transform: rotate(90deg);
   background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 
 
@@ -2869,6 +2873,7 @@ body {
   margin: 0;
   position: relative;
 }
+
 
 .cards-link-container::before {
   content: "";
